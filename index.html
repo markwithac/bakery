@@ -9,76 +9,73 @@
     <title>Bakery Name</title>
     <meta name="description" content="Ganhao bakery">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <section id="nav-bar">
-      <div class="container">
-        <div id="logo">
-          <h1>Logo</h1>
-        </div>
-
-        <nav>
-          <ul>
-            <li><a href="#nav-bar">Home</a></li>
-            <li><a href="#header">About</a></li>
-            <li><a href="#about">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+    <header id="nav">
+      <div class="container header">
+        <img class="header-logo" src="images/logo.jpg" alt="logo">
+        <ul class="nav-bar">
+          <li><a href="#nav">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </section>
+    </header> 
 
-    <section id="header">
-      <div class="container">
-        <h1>Title</h1>
-        <p>Short description/ bio</p>
-      </div>
+    <section id="title">
+      <div class="container title">
+        <h2 id="title-h">Lorem Ipsum</h2>
+        <p id="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      </div> 
     </section>
 
     <section id="about">
-      <div class="container">
-        <img src="images/" alt="About us image">
-        <h1>About us</h1>
-        <p>Our story...</p>
+      <div class="container about">
+        <h1>Our Mission</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <img class="about-img" src="images/about.jpg" alt="about us">
+        <h1>About Us</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
       </div>
     </section>
 
-    <!-- menu -->
     <section id="menu">
       <div class="container">
         <h1>Menu</h1>
         <div class="menu-container">
-          <img src="./images/" alt="Menu page 1">
-        </div>
-        <div class="menu-container">
-          <img src="./images/" alt="Menu page 2">
+          <img src="./images/menu-1.jpg" alt="Menu page 1">
+          <img src="./images/menu-2.jpg" alt="Menu page 2">
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="container">
-        <!-- contact -->
+      <div class="container contact">
         <h1>Contact Us!</h1>
-        <form>
-          <input type="text" placedolder="First Name">
-          <input type="text" placedolder="Last Name">
-          <input type="email" placedolder="Email">
-          <input type="tel" placedolder="Phone">
-          <input type="text" placedolder="Message">
-          <button type='submit' class='btn-1'>Send</button>
+        <form class="contact-form">
+          <!-- <label for="fname"></label> -->
+          <input type="text" class="input" id="fname" name="firstname" placeholder="First Name">
+          <!-- <label for="lname"></label> -->
+          <input type="text" class="input" id="lname" name="lastname" placeholder="Last Name">
+          <!-- <label for="email"></label> -->
+          <input type="email" class="input" id="email" name="email" placeholder="Email">
+          <!-- <label for="phone"></label> -->
+          <input type="tel" class="input" id="phone" name="phone" placeholder="Phone">
+          
+          <!-- <label for="message"></label> -->
+          <textarea id="message" class="input" name="message" placeholder="Message"></textarea>
+          
+          <button type='submit' class='btn-1 input'>Send</button>
         </form>
       </div>
     </section>
 
     <footer>
-      <div class="container">
+      <div class="container footer">
         <div class="footer-box"> 
           <h2>Social</h2>
           <ul>
@@ -105,7 +102,11 @@
           </ul>
         </div>
 
-        <img src="/images/" alt="Logo + Slogan">
+        <div class="footer-box">
+          <img id="f-img" src="/images/logo.jpg" alt="Logo + Slogan">
+        </div>
+
+        <p id="copyr">&copy; 2020 Best Bakery<p></p>
   
       </div>
     </footer>
