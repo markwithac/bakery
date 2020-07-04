@@ -29,17 +29,23 @@
     <section id="title">
       <div class="container title">
         <h2 id="title-h">Lorem Ipsum</h2>
-        <p id="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p id="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       </div> 
     </section>
 
     <section id="about">
       <div class="container about">
-        <h1>Our Mission</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-        <img class="about-img" src="images/about.jpg" alt="about us">
-        <h1>About Us</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+        <div class="about-wrapper primary">
+          <div class="text-wrapper">
+            <h1>About Us</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <h1>Our Mission</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="about-wrapper secondary">
+          <img class="about-img" src="images/about.jpg" alt="about us">
+        </div>
       </div>
     </section>
 
@@ -47,8 +53,12 @@
       <div class="container">
         <h1>Menu</h1>
         <div class="menu-container">
-          <img src="./images/menu-1.jpg" alt="Menu page 1">
-          <img src="./images/menu-2.jpg" alt="Menu page 2">
+          <div class="menu-item">
+            <img src="./images/menu-1.jpg" alt="Menu page 1">
+          </div>
+          <div class="menu-item">
+            <img src="./images/menu-1.jpg" alt="Menu page 2">
+          </div>
         </div>
       </div>
     </section>
@@ -58,12 +68,12 @@
         <h1>Contact Us!</h1>
 
         <form class="contact-form">
-          <div class="row">
+          <div class="row primary">
             <label for="fname"></label>
             <input type="text" id="fname" name="firstname" placeholder="First Name">
           </div>
           
-          <div class="row">
+          <div class="row primary">
             <label for="lname"></label>
             <input type="text" id="lname" name="lastname" placeholder="Last Name">
           </div>
@@ -78,7 +88,7 @@
             <input type="tel" id="phone" name="phone" placeholder="Phone">
           </div>
 
-          <div class="row">
+          <div class="row body">
             <label for="message"></label>
             <textarea id="message" name="message" placeholder="Message"></textarea>
           </div>
@@ -93,38 +103,40 @@
 
     <footer>
       <div class="container footer">
-        <div class="footer-box"> 
-          <h2>Social</h2>
-          <ul>
-            <li><a href="https://www.instagram.com">Instagram</a></li>
-            <li><a href="https//www.facebook.com">Facebook</a></li>
-            <li><a href="https//www.Twitter.com">Twitter</a></li>
-          </ul>
-        </div>
+        <div class="primary-footer">
+          <div class="footer-box ft1"> 
+            <h2>Social</h2>
+            <ul>
+              <li><a href="https://www.instagram.com">Instagram</a></li>
+              <li><a href="https//www.facebook.com">Facebook</a></li>
+              <li><a href="https//www.Twitter.com">Twitter</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-box"> 
-          <h2>Contact</h2>
-          <ul>
-            <li class="contact-info"><a href="www.maps.com">123 Bakery st., Toronto, M8Y 1A1</a></li>
-            <li class="contact-info">Email: <a href="mailto:bakery@gmail.com">bakery@gmail.com</a></li>
-            <li class="contact-info">Tele: <a href="tel:123-456-7890">123-456-7890</a></li>
-          </ul>
-        </div>
+          <div class="footer-box ft2"> 
+            <h2>Contact</h2>
+            <ul>
+              <li class="contact-info"><a href="www.maps.com">123 Bakery st., Toronto, M8Y 1A1</a></li>
+              <li class="contact-info">Email: <a href="mailto:bakery@gmail.com">bakery@gmail.com</a></li>
+              <li class="contact-info">Tele: <a href="tel:123-456-7890">123-456-7890</a></li>
+            </ul>
+          </div>
 
-        <div class="footer-box"> 
-          <h2>Hours</h2>
-          <ul>
-            <li>Weekdays: 8 AM - 7 PM</li>
-            <li>Weekends: 7 AM - 7 PM</li>
-          </ul>
+          <div class="footer-box ft3"> 
+            <h2>Hours</h2>
+            <ul>
+              <li>Weekdays: 8 AM - 7 PM</li>
+              <li>Weekends: 7 AM - 7 PM</li>
+            </ul>
+          </div>
         </div>
+        <div class="secondary-footer">
+          <div class="footer-box">
+            <img id="f-img" src="./images/logo.jpg" alt="Logo + Slogan">
+          </div>
 
-        <div class="footer-box">
-          <img id="f-img" src="./images/logo.jpg" alt="Logo + Slogan">
+          <p id="copyr">&copy; 2020 Best Bakery<p></p>
         </div>
-
-        <p id="copyr">&copy; 2020 Best Bakery<p></p>
-  
       </div>
     </footer>
 
