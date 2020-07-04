@@ -56,20 +56,37 @@
     <section id="contact">
       <div class="container contact">
         <h1>Contact Us!</h1>
+
         <form class="contact-form">
-          <!-- <label for="fname"></label> -->
-          <input type="text" class="input" id="fname" name="firstname" placeholder="First Name">
-          <!-- <label for="lname"></label> -->
-          <input type="text" class="input" id="lname" name="lastname" placeholder="Last Name">
-          <!-- <label for="email"></label> -->
-          <input type="email" class="input" id="email" name="email" placeholder="Email">
-          <!-- <label for="phone"></label> -->
-          <input type="tel" class="input" id="phone" name="phone" placeholder="Phone">
+          <div class="row">
+            <label for="fname"></label>
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+          </div>
           
-          <!-- <label for="message"></label> -->
-          <textarea id="message" class="input" name="message" placeholder="Message"></textarea>
+          <div class="row">
+            <label for="lname"></label>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+          </div>
+
+          <div class="row">
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email">
+          </div>
+
+          <div class="row">
+            <label for="phone"></label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+          </div>
+
+          <div class="row">
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+          </div>
           
-          <button type='submit' class='btn-1 input'>Send</button>
+          <div class="row">
+            <input class="btn" type="submit" class="btn-1" value="Send"> 
+          </div>
+
         </form>
       </div>
     </section>
@@ -88,9 +105,9 @@
         <div class="footer-box"> 
           <h2>Contact</h2>
           <ul>
-            <li>Address: 123 Bakery st., Toronto, M8Y 1A1</li>
-            <li>Email: bakery@gmail.com</li>
-            <li>Phone: 123-456-7890</li>
+            <li class="contact-info"><a href="www.maps.com">123 Bakery st., Toronto, M8Y 1A1</a></li>
+            <li class="contact-info">Email: <a href="mailto:bakery@gmail.com">bakery@gmail.com</a></li>
+            <li class="contact-info">Tele: <a href="tel:123-456-7890">123-456-7890</a></li>
           </ul>
         </div>
 

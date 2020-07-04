@@ -14,7 +14,6 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  overflow: hidden; 
   text-align: center; 
 }
 
@@ -107,7 +106,6 @@ header {
 }
 
 
-
 /* MENU */
 
 .menu-container {
@@ -122,9 +120,6 @@ header {
 
 /* CONTACT */
 
-input {
-  width: 100%;
-}
 .contact {
   padding-top: 15px;
 }
@@ -134,9 +129,46 @@ input {
   flex-wrap: wrap;
 }
 
-.input {
+.contact-info {
+  font-weight: 700;
+}
+
+.contact-info a {
+  font-weight: 400;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 5px;
+  border: #333333 2px solid;
+  border-radius: 4px;;
+}
+
+textarea {
+  height: 100px;
+}
+
+.row {
+  display: flex;
+  width: 100%;
   flex-grow: 1;
 }
+
+.row ::placeholder {
+  font: 14px/1.5 'Roboto', Helvetica, sans-serif;
+  color: #333333;
+}
+
+.btn {
+  background-color: #333333;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
 
 
 
@@ -187,7 +219,6 @@ footer {
 @media (min-width: 769px) {
   
   /* NAV */
-  .container,
   .nav-bar {
     display: flex;
   }
