@@ -353,6 +353,10 @@ footer {
     flex-basis: 100%;
   }
 
+  .contact {
+    max-width: 705px;
+  }
+
 
   /* FOOTER */
   .footer {
